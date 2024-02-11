@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f3;
+
+}
+
+nav aside {
+    flex: 1;
+
+}
+
+section#interface {
+    flex: 2;
+}
+
+h1 .bnt{
+    font-size: 15px;
+    padding-left: 15px;
+}
+nav{
+
+    height: 820px ;
+    background: white;
+    overflow: hidden;
+    display: block;
+}
+aside{
+
+    height: 100%;
+    margin: 0;
+    background: #0d153a;
+    float: left; 
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.logo{
+    margin-bottom: 70px; 
+}
+
+aside h1 span{
+   font-size: 20px;
+   line-height: 50px;
+   margin-left: 6px;
+   color:white;
+   cursor: pointer;
+}
+aside ul{
+    padding: 20px 0 20px 10px ;
+    cursor: pointer;
+}
+aside ul li{
+    list-style: none;
+    font-weight: bold;
+    margin :20px auto;
+    position: relative;
+    overflow: hidden;
+    max-height: 35px;
+    transition: 1s;
+    text-transform: capitalize;
+    cursor: pointer;
+
+}
+aside ul:first-child li {
+    max-height: 50px;
+}
+aside ul.tn:hover{
+    background-color: rgb(20, 36, 80);
+    border-left: 2px solid #fff;
+    cursor: pointer;
+}
+ul.active{
+    background-color: rgb(20, 36, 80);
+    border-left: 2px solid #fff;
+}
+aside ul.tn:hover span {
+    color: #fff;
+}
+aside.tn:hover  i {
+    color: #fff;
+}
+aside ul li a{
+    text-decoration: none;
+    color:white;
+}
+aside ul li a i { 
+    width: 30px;
+    padding: 5px;
+    margin-left: 15px;
+}
+aside ul li a i.fa-angle-right{
+    right: 0;
+    top: 1px;
+    float: right;
+
+}
+aside ul .tn , aside ul .profile{
+    padding-bottom: 20px;
+}
+i{
+    float: right;
+}
+span{
+    color: white;
+}
+h2{
+    margin-left: 95px;
+    color: #fff;
+    padding-top: 3px;
+    font-size: 20px;
+}
+
+img.m1{
+    width: 40%;
+    height: 90px ;
+    margin-left: 70px;
+    padding-top: 20px;
+
+}
+#interface{
+    width: calc(100% - 300%);
+    margin-left: 235px;
+    position: relative;
+}
+#interface .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px 30px ;
+    border-bottom: 3px solid #0f0c3f;
+
+}
+#interface .navigation .search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 14px ;
+    border: 1px solid #d7dbe6;
+    border-radius: 4px;
+}
+#interface .navigation .search input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+#interface .navigation .search i{
+    margin-right: 14px;
+}
+#interface .navigation .profile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#interface .navigation .profile i{
+    margin-right: 20px;
+    font-size: 19px;
+    font-weight: 400;
+}
+#interface .navigation .profile img{
+    width: 40%;
+    height: 30px;
+    object-fit:cover ;
+    border-radius: 50%;
+}
+.i-name{
+    color: #444a53;
+    padding: 30px 30px 0 35px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 130px;
+    margin-bottom: 50px;
+}
+
+.board{
+    width: 95%;
+    margin: 30px 0 30px 30px ;
+    overflow: auto;
+    background: #fff;
+    border-radius: 8px;
+}
+table{
+    border-collapse: collapse;
+}
+tr{
+    border-bottom: 1px solid #eef0f3 ;
+}
+thead td {
+    font-size: 14px ;
+    text-transform: uppercase;
+    font-weight: 400;
+    background: #f9fafb;
+    text-align: start;
+    padding: 15px;
+}
+tbody tr td {
+    padding: 10px 15px  ;
+}
+.edit a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #554cd1;
+    font-weight: 600;
+}
+a.edit i{
+    color: black !important;
+}
+button.Btn{
+    width: 120px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #0d153a;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 4px ;
+    display: block; 
+    margin-top: 250px; 
+
+}
+button a{
+    text-decoration: none;
+    color: #fff;
+}
+.add {
+    display: flex;
+    align-items: center;
+}
+  
+.i-name {
+    margin-right: auto; 
+ }
+  
+.ajouter {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; 
+}
+  
+.ajouter h5 {
+    margin-right: 55px; 
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 100px;
+    color: #444a53;
+
+
+}
+i.fa-sharp {
+    padding-right: 10px;
+    margin-top: 100px;
+    font-weight: 700;
+    font-size: 19px;
+    color: #444a53;
+}
+td input{
+    border: none;
+}
+input .edit{
+    text-decoration: none;
+    font-size: 14px;
+    color: #554cd1;
+    font-weight: 600;
+}
+a.editt {
+    text-decoration: none;
+    font: 16px 'time new row ';
+    color: black;
+}
